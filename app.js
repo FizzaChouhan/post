@@ -117,11 +117,30 @@ function deletePost() {
     document.getElementById("editPost").style.display = "none";
 }
 
-function editPost() {
-    var heading = document.getElementById("heading").textContent;
-    var para = document.getElementById("para").textContent;
-    var title = document.getElementById("floatingInput");
-    var text = document.getElementById("textArea");
-   
-    heading=prompt()
+
+// function editPost(event) {
+//     // Find the parent element of the button
+//     var postElement = event.target.parentNode;
+    
+//     // Get the heading and paragraph elements
+//     var heading = postElement.querySelector('.heading');
+//     var para = postElement.querySelector('.para');
+    
+//     // Prompt for new title and description
+//     var newTitle = prompt("Enter new title:", heading.textContent);
+//     var newText = prompt("Enter new description:", para.textContent);
+    
+//     // Update the heading and paragraph text if valid input is provided
+//     if (newTitle !== null && newTitle.trim() !== "") {
+//         heading.textContent = newTitle;
+//     }
+//     if (newText !== null && newText.trim() !== "") {
+//         para.textContent = newText;
+//     }
+// }
+function editPost(event) {
+    var newTitle = prompt("Enter new title:", heading.textContent);
+    var newText = prompt("Enter new description:", para.textContent);
+    heading.textContent=newTitle
+    para.textContent=newText
 }
