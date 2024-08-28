@@ -22,6 +22,7 @@
         <h1 class="fw-bold mb-0 fs-2">Add New Post</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+     
   
       <div class="modal-body p-5 pt-0">
         <form class="forms">
@@ -35,6 +36,19 @@
           </div>
         
           <hr class="my-4">
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="bg()">
+             Back-Grounds
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="images/1.jfif">bg1</a></li>
+              <li><a class="dropdown-item" href="images/2.jfif">bg2</a></li>
+              <li><a class="dropdown-item" href="images/3.jfif">bg3</a></li>
+              <li><a class="dropdown-item" href="images/4.jfif">bg4</a></li>
+              <li><a class="dropdown-item" href="images/5.jfif">bg5</a></li>
+            </ul>
+          </div>
           
           <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit" onclick="posted(event)">
             Post <i class="bi bi-send-check-fill"></i>
@@ -46,10 +60,10 @@
 </div>
 
 <!-- Modal for Displaying the Submitted Post -->
-<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalDisplayPost">
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-4 shadow">
-      <div class="modal-header p-5 pb-4 border-bottom-0">
+    <div class="modal-content rounded-4 shadow" id="modalDisplayPost" >
+      <div class="modal-header p-5 pb-4 border-bottom-0" >
         <h1 class="fw-bold mb-0 fs-2">POST</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
